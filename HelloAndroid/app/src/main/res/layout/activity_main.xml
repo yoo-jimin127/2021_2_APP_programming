@@ -1,72 +1,70 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="350dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginTop="25dp"
-        android:layout_marginEnd="28dp"
-        android:layout_marginRight="28dp"
-        android:background="#009688"
-        android:text="버튼 1"
-        android:textSize="20sp" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="350dp"
-        android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/button1"
-        android:layout_alignLeft="@+id/button1"
-        android:layout_alignTop="@+id/button1"
-        android:layout_alignEnd="@+id/button1"
-        android:layout_alignRight="@+id/button1"
-        android:layout_marginStart="1dp"
-        android:layout_marginLeft="1dp"
-        android:layout_marginTop="87dp"
-        android:layout_marginEnd="0dp"
-        android:layout_marginRight="0dp"
-        android:text="이건 텍스트뷰입니다."
-        android:textSize="20sp" />
+    android:orientation="vertical" >
 
     <EditText
-        android:id="@+id/EditText"
-        android:layout_width="350dp"
+        android:id="@+id/edit1"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/textView"
-        android:layout_alignLeft="@+id/textView"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginStart="-4dp"
-        android:layout_marginLeft="-4dp"
-        android:layout_marginTop="197dp"
-        android:layout_marginEnd="31dp"
-        android:layout_marginRight="31dp"
-        android:layout_weight="1"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="이건 에디트텍스트입니다."
-        android:textSize="20sp"
-        android:background="#3F51B5"/>
+        android:layout_margin="10dp"
+        android:hint="입력1"/>
+
+    <EditText
+        android:id="@+id/edit2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="입력2"/>
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/btnAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:clickable="true"
+        android:text="더하기"/>
+
+    <Button
+        android:id="@+id/btnMin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:clickable="true"
+        android:text="빼기"/>
+
+    <Button
+        android:id="@+id/btnMul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:clickable="true"
+        android:text="곱하기"/>
+
+    <Button
+        android:id="@+id/btnDiv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:clickable="true"
+        android:text="나누기"/>
+
+    <Button
+        android:id="@+id/btnExt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:clickable="true"
+        android:text="나머지 값"/>
+
+    <TextView
         android:layout_width="wrap_content"
-        android:layout_height="440dp"
-        android:layout_alignStart="@+id/EditText"
-        android:layout_alignLeft="@+id/EditText"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="5dp"
-        android:layout_marginLeft="5dp"
-        android:layout_marginTop="254dp"
-        android:text="버튼 2" />
-</RelativeLayout>
+        android:layout_height="wrap_content"
+        android:id="@+id/TextRes"
+        android:textSize="30sp"
+        android:textColor="#FF0000"
+        android:layout_margin="10dp"
+        android:text="계산결과: "/>
+
+</LinearLayout>
