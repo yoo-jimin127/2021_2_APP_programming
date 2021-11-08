@@ -32,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
         btnMul=(Button)findViewById(R.id.btnMul);
         btnDiv=(Button)findViewById(R.id.btnDiv);
         textRes=(TextView)findViewById(R.id.textRes);
+
         btnAdd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -41,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
                 textRes.setText("계산결과 : "+res.toString());
             }
         });
+
         btnMin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -50,6 +52,7 @@ public class MainActivity extends AppCompatActivity {
                 textRes.setText("계산결과 : "+res.toString());
             }
         });
+
         btnMul.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -59,6 +62,7 @@ public class MainActivity extends AppCompatActivity {
                 textRes.setText("계산결과 : "+res.toString());
             }
         });
+
         btnDiv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -68,11 +72,11 @@ public class MainActivity extends AppCompatActivity {
                 textRes.setText("계산결과 : "+res.toString());
             }
         });
+
         for(i=0;i<numBtnIds.length;i++)
             numButtons[i]=(Button)findViewById(numBtnIds[i]);
 
-        for(i=0;i<numBtnIds.length;i++)
-        {
+        for(i=0;i<numBtnIds.length;i++) {
             final int index;
             index=i;
             numButtons[index].setOnClickListener(new View.OnClickListener() {
