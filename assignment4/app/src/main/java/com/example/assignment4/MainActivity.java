@@ -15,9 +15,7 @@ import android.widget.RadioButton;
 import android.widget.TextView;
 import android.widget.TimePicker;
 import android.widget.DatePicker;
-
 import org.w3c.dom.Text;
-
 import java.sql.Time;
 
 public class MainActivity extends AppCompatActivity {
@@ -32,9 +30,6 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
-
-
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         setTitle("시간 예약(수정)");
@@ -60,6 +55,7 @@ public class MainActivity extends AppCompatActivity {
                 rdoTime.setVisibility(View.VISIBLE);
             }
         });
+
         rdoCal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -67,6 +63,7 @@ public class MainActivity extends AppCompatActivity {
                 dpicker.setVisibility(View.VISIBLE);
             }
         });
+
         rdoTime.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -74,6 +71,7 @@ public class MainActivity extends AppCompatActivity {
                 dpicker.setVisibility(View.INVISIBLE);
             }
         });
+
         chrono.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -84,6 +82,7 @@ public class MainActivity extends AppCompatActivity {
                 rdoTime.setVisibility(View.VISIBLE);
             }
         });
+
         tvYear.setOnLongClickListener(new View.OnLongClickListener() {
             @Override
             public boolean onLongClick(View view) {
