@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/rotation"
+        android:title="그림 회전"/>
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/item1"
+            android:title="한라산"
+            android:checked="true"/>
+        <item
+            android:id="@+id/item2"
+            android:title="백두산"
+            android:checked="false"/>
+        <item
+            android:id="@+id/item3"
+            android:title="설악산"
+            android:checked="false"/>
+    </group>
+</menu>
